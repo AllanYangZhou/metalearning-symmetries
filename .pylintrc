@@ -1,0 +1,5 @@
+[TYPECHECK]
+generated-members=numpy.*,torch.*
+
+[MESSAGES CONTROL]
+disable=invalid-name,fixme,bad-continuation
