@@ -16,7 +16,7 @@ You must specify the name of the problem we wish to generate data for. Options a
 * `2d_rot8_flip`: 2-D data that is equivariant to 45-degree rotations and flips.
 
 Example:
-```
+```sh
 python generate_synthetic_data.py --problem rank1
 ```
 
@@ -24,7 +24,7 @@ python generate_synthetic_data.py --problem rank1
 The file `train_synthetic.py` contains training and evaluation code. Specifying the argument `model` controls whether to use MSR, plain MAML, or something else.
 
 Some examples are given below:
-```
+```sh
 python train_synthetic.py --problem rank1 --model share_fc  # MSR+FC on rank1 problem.
 python train_synthetic.py --problem rank1 --model fc  # MAML+FC on rank1 problem.
 python train_synthetic.py --problem rank1 --model conv  # MAML+Conv model on rank1 problem.
