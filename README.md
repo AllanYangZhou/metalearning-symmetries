@@ -15,10 +15,12 @@ You must specify the name of the problem we wish to generate data for. Options a
 * `2d_rot8`: 2-D data that is equivariant to 45-degree rotations.
 * `2d_rot8_flip`: 2-D data that is equivariant to 45-degree rotations and flips.
 
-Example:
+Example (run `mkdir data` first to create output directory):
 ```sh
 python generate_synthetic_data.py --problem rank1
 ```
+
+In order to generate data for `2d_rot8` (17G) and `2d_rot8_flip` (6.6G), install PyTorch version `1.1` and use a machine with CUDA support and a large RAM size. 
 
 ### Train
 The file `train_synthetic.py` contains training and evaluation code. Specifying the argument `model` controls whether to use MSR, plain MAML, or something else.
